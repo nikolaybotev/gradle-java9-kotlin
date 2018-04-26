@@ -1,0 +1,19 @@
+plugins {
+    id 'com.zyxist.chainsaw' version '0.3.1' apply false
+    id 'idea'
+    id "org.jetbrains.kotlin.jvm" version "1.2.31" apply false
+}
+
+subprojects {
+    apply plugin: 'java-library'
+    apply plugin: 'idea'
+    apply plugin: 'com.zyxist.chainsaw'
+}
+
+idea {
+    project {
+        // The idea plugin derives the JDK name as '1.9' while IDEA uses '9' as the default name for JDK 9
+        jdkName = '9'
+    }
+}
+
