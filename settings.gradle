@@ -7,4 +7,3 @@ gradle.beforeProject { p ->
 
 include ':java-only'
 include ':java-and-kotlin'
-

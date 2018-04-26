@@ -3,4 +3,3 @@ apply from: '../kotlin.gradle'
 dependencies {
     implementation project(':java-only')
 }
-

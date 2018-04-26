@@ -15,4 +15,3 @@ jar.duplicatesStrategy = "exclude"
 
 // Allow cross-references between java and kotlin
 sourceSets.main.kotlin.srcDirs += 'src/main/java'
-
