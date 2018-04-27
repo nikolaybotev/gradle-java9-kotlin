@@ -3,3 +3,8 @@ apply from: '../kotlin.gradle'
 dependencies {
     implementation project(':java-only')
 }
+
+task(run, dependsOn: 'classes', type: JavaExec) {
+    main = mainClass
+    classpath = sourceSets.main.runtimeClasspath
+}
