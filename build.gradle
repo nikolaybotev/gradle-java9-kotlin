@@ -10,5 +10,3 @@ subprojects {
     apply plugin: 'com.zyxist.chainsaw'
 }
 
-// The idea plugin derives the JDK name as '1.9' while IDEA uses '9' as the default name for JDK 9
-idea.project.jdkName = '9'
