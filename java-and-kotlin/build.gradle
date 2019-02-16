@@ -5,6 +5,8 @@ dependencies {
 }
 
 task(run, dependsOn: 'classes', type: JavaExec) {
-    main = mainClass
+    if (project.hasProperty('mainClass')) {
+        main = project.property('mainClass')
+    }
     classpath = sourceSets.main.runtimeClasspath
 }
