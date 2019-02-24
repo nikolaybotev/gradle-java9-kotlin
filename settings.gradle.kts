@@ -1,8 +1,8 @@
 // Configure repositories for all projects
 gradle.beforeProject {
-    repositories {
-        jcenter()
-    }
+   repositories {
+      jcenter()
+   }
 }
 
 include(":java-only")

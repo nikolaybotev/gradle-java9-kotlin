@@ -3,10 +3,7 @@ import org.jetbrains.kotlin.gradle.plugin.KotlinSourceSet
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-//    `idea`
-//    `java-library`
-    kotlin("jvm")
-//    id("com.zyxist.chainsaw")
+   kotlin("jvm")
 }
 
 val compileKotlin: KotlinCompile by tasks
