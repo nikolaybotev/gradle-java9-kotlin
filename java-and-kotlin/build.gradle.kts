@@ -3,6 +3,9 @@ import org.jetbrains.kotlin.gradle.plugin.KotlinSourceSet
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
+   `idea`
+   `java-library`
+   id("com.zyxist.chainsaw")
    kotlin("jvm")
 }
 
@@ -30,10 +33,6 @@ dependencies {
 }
 
 tasks.create("run", JavaExec::class) {
-   if (project.hasProperty("mainClass"))
-   {
-      main = project.property("mainClass") as String
-   }
-
+   main = "javaandkotlin.KotlinFileKt"
    classpath = sourceSets.main.get().runtimeClasspath
 }
