@@ -1,9 +1,0 @@
-// Configure repositories for all projects
-gradle.beforeProject { p ->
-    p.repositories {
-        jcenter()
-    }
-}
-
-include ':java-only'
-include ':java-and-kotlin'
