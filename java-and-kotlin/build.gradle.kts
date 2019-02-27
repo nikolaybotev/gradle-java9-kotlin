@@ -7,6 +7,7 @@ plugins {
    `java-library`
    id("com.zyxist.chainsaw")
    kotlin("jvm")
+   id("com.alkimiapps.gradle-dplink-plugin")
 }
 
 val compileKotlin: KotlinCompile by tasks
